@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
-  background-image: url(../image/contacto.jpg);
+  background-image: url(../../image/contacto.jpg);
 }
 
 * {
