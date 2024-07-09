@@ -1,0 +1,529 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  /* background-color: #f2f2f2; */
+  /* Cambia el color de fondo */
+}
+
+.titulos {
+  text-align: center;
+  text-align: justify;
+  padding: 55px 20px;
+  max-width: 1000px;
+  /* Ajusta este valor según sea necesario */
+  margin: 10px auto;
+  /* Centra el contenedor */
+}
+
+/* cards vision,mision */
+
+/* Clase específica para la sombra en políticas */
+/* Estilo base para todas las imágenes */
+.valores {
+  width: 500px;
+  height: 100px;
+}
+.organizacion {
+  width: 500px;
+  height: 300px;
+}
+
+/* Definición de las animaciones */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%) scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%) scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%) scale(1);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Aplicación de las animaciones a cada imagen */
+#organizacion1 {
+  animation: slideInLeft 2s ease-in-out;
+}
+
+#organizacion2 {
+  animation: slideInUp 2s ease-in-out;
+}
+
+#organizacion3 {
+  animation: slideInRight 2s ease-in-out;
+}
+
+/* ----------------- */
+.logo-img {
+  width: 150px;
+  /* ajusta el tamaño según tus necesidades */
+  height: auto;
+  /* mantiene la proporción de aspecto */
+}
+
+.who {
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  transition: box-shadow 0.3s ease; /* Transición suave */
+}
+
+.separator {
+  width: 100px;
+  height: 2px;
+  background-color: #2096bc;
+  margin: 20px auto;
+}
+.separator2 {
+  width: 300px;
+  height: 2px;
+  background-color: #1e94c1;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
+}
+
+.separator2:hover {
+  transform: scale(1.5); /* Cambia el tamaño de la imagen al hacer hover */
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5); /* Añade una sombra blanca */
+}
+
+p {
+  font-size: 18px;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+.column {
+  flex-basis: calc(33.33% - 40px);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.icon {
+  width: 180px;
+  /* Ajusta el tamaño del icono */
+  height: 180px;
+  /* Ajusta el tamaño del icono */
+  background-size: contain;
+  /* Ajusta el tamaño de la imagen al contenedor */
+  background-repeat: no-repeat;
+  /* background-position: center center; */
+  /* Centra la imagen horizontal y verticalmente */
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  border: 3px solid #1e2456;
+  /* Añade un borde de color gris opaco */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon.objetivo {
+  background: url("../image/icons/objetivo.png") no-repeat center center;
+  background-color: #ffffff;
+}
+
+.icon.vision {
+  background: url("../image/icons/vision.png") no-repeat center center;
+  background-color: #ffffff;
+}
+
+.icon.politica {
+  background: url("../image/icons/politica.png") no-repeat center center;
+  background-color: #ffffff;
+}
+
+/* .column:hover .icon {
+    background-color: #ADD8E6;
+    transform: translateY(-5px);
+  } */
+.icon.objetivo:hover {
+  background-color: #a8ce3c;
+  /* Cambia el color de fondo al pasar el cursor por encima de "Misión" */
+  transform: translateY(-5px);
+}
+
+.icon.vision:hover {
+  background-color: #ffffff;
+  /* Cambia el color de fondo al pasar el cursor por encima de "Visión" */
+  transform: translateY(-5px);
+}
+
+.icon.politica:hover {
+  background-color: #1997bd;
+  /* Cambia el color de fondo al pasar el cursor por encima de "Políticas de gestión" */
+  transform: translateY(-5px);
+}
+
+.icon.objetivo,
+.icon.vision,
+.icon.politica {
+  animation: pulse 1s ease infinite alternate;
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.acerca {
+  position: relative;
+  padding: 0 0;
+  /* background: linear-gradient(
+    60deg,
+    rgb(236, 232, 250) 0%,
+    rgba(0, 172, 193, 1) 100%
+  ); */
+}
+
+/* Estilo para la sección acerca */
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex-basis: calc(50% - 40px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .column {
+    flex-basis: calc(100% - 40px);
+  }
+}
+
+/* Inicio de estilos para el timeline */
+
+@media (min-width: 1000px) {
+  #timeline .demo-card:nth-child(even) .head::after,
+  #timeline .demo-card:nth-child(odd) .head::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+  }
+
+  #timeline .demo-card:nth-child(even) .head::before,
+  #timeline .demo-card:nth-child(odd) .head::before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: #bdbdbd;
+    border-radius: 9px;
+    box-shadow: 0px 0px 2px 8px #f7f7f7;
+  }
+}
+
+/* Some Cool Stuff */
+.demo-card:nth-child(1) {
+  order: 1;
+}
+
+.demo-card:nth-child(2) {
+  order: 4;
+}
+
+.demo-card:nth-child(3) {
+  order: 2;
+}
+
+.demo-card:nth-child(4) {
+  order: 5;
+}
+
+.demo-card:nth-child(5) {
+  order: 3;
+}
+
+.demo-card:nth-child(6) {
+  order: 6;
+}
+
+/* Border Box */
+* {
+  box-sizing: border-box;
+}
+
+#timeline {
+  padding: 20px 0;
+  /* border-top: 1px solid rgba(191, 191, 191, 0.4); */
+  /* border-bottom: 1px solid rgba(191, 191, 191, 0.4); */
+}
+
+#timeline h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 20px;
+  color: #1d2353;
+}
+
+#timeline p.leader {
+  text-align: center;
+  max-width: 90%;
+  margin: auto;
+  margin-bottom: 45px;
+}
+
+#timeline .demo-card-wrapper {
+  position: relative;
+  margin: auto;
+}
+
+@media (min-width: 1000px) {
+  #timeline .demo-card-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    width: 1170px;
+    height: 1650px;
+    margin: 0 auto;
+  }
+}
+
+#timeline .demo-card-wrapper::after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  border-left: 1px solid rgba(191, 191, 191, 0.4);
+}
+
+@media (min-width: 1000px) {
+  #timeline .demo-card-wrapper::after {
+    border-left: 1px solid #bdbdbd;
+  }
+}
+
+#timeline .demo-card {
+  position: relative;
+  display: block;
+  margin: 10px auto 80px;
+  max-width: 94%;
+  z-index: 2;
+}
+
+@media (min-width: 480px) {
+  #timeline .demo-card {
+    max-width: 60%;
+    box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07);
+  }
+}
+
+@media (min-width: 720px) {
+  #timeline .demo-card {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #timeline .demo-card {
+    max-width: 450px;
+    height: 400px;
+    margin: 90px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  #timeline .demo-card:nth-child(odd) {
+    margin-right: 45px;
+  }
+
+  #timeline .demo-card:nth-child(odd) .head::after {
+    border-left-width: 15px;
+    border-left-style: solid;
+    left: 100%;
+  }
+
+  #timeline .demo-card:nth-child(odd) .head::before {
+    left: 491.5px;
+  }
+
+  #timeline .demo-card:nth-child(even) {
+    margin-left: 45px;
+  }
+
+  #timeline .demo-card:nth-child(even) .head::after {
+    border-right-width: 15px;
+    border-right-style: solid;
+    right: 100%;
+  }
+
+  #timeline .demo-card:nth-child(even) .head::before {
+    right: 489.5px;
+  }
+
+  #timeline .demo-card:nth-child(2) {
+    margin-top: 180px;
+  }
+}
+
+#timeline .demo-card .head {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: 400;
+}
+
+#timeline .demo-card .head .number-box {
+  display: inline;
+  float: left;
+  margin: 15px;
+  padding: 10px;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.17);
+}
+
+#timeline .demo-card .head h2 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: inherit;
+  letter-spacing: 2px;
+  margin: 0;
+  padding-bottom: 6px;
+  line-height: 1rem;
+}
+
+@media (min-width: 480px) {
+  #timeline .demo-card .head h2 {
+    font-size: 165%;
+    line-height: 1.2rem;
+  }
+}
+
+#timeline .demo-card .head h2 span {
+  display: block;
+  font-size: 0.6rem;
+  margin: 0;
+}
+
+@media (min-width: 480px) {
+  #timeline .demo-card .head h2 span {
+    font-size: 0.8rem;
+  }
+}
+
+#timeline .demo-card .body {
+  background: #fff;
+  border: 1px solid rgba(191, 191, 191, 0.4);
+  border-top: 0;
+  padding: 15px;
+}
+
+@media (min-width: 1000px) {
+  #timeline .demo-card .body {
+    height: 315px;
+  }
+}
+
+#timeline .demo-card .body p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 15px;
+}
+
+#timeline .demo-card .body img {
+  display: block;
+  width: 100%;
+}
+
+#timeline .demo-card--step1 {
+  background-color: #afcd4b;
+}
+
+#timeline .demo-card--step1 .head::after {
+  border-color: #afcd4b;
+}
+
+#timeline .demo-card--step2 {
+  background-color: #1d95c0;
+}
+
+#timeline .demo-card--step2 .head::after {
+  border-color: #1d95c0;
+}
+
+#timeline .demo-card--step3 {
+  background-color: #1d2353;
+}
+
+#timeline .demo-card--step3 h2 {
+  color: white;
+}
+
+#timeline .demo-card--step3 .head::after {
+  border-color: #1d2353;
+}
+
+#timeline .demo-card--step4 {
+  background-color: #afcd4b;
+}
+
+#timeline .demo-card--step4 .head::after {
+  border-color: #afcd4b;
+}
+
+#timeline .demo-card--step5 {
+  background-color: #1d95c0;
+}
+
+#timeline .demo-card--step5 .head::after {
+  border-color: #1d95c0;
+}
+
+#timeline .demo-card--step6 {
+  background-color: #1d2353;
+}
+#timeline .demo-card--step6 .head::after {
+  border-color: #1d2353;
+}
+#timeline .demo-card--step6 h2 {
+  color: white;
+}
+/* Final de estilos para el timeline */
+/* ----------------------------------------------------------- */
+.hover-effect:hover {
+  transform: scale(1.05); /* Cambia el tamaño de la imagen al hacer hover */
+  transition: ease-in 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Añade una sombra */
+}

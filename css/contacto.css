@@ -1,0 +1,109 @@
+/* Estilos para la sección de créditos */
+.section-credits {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan a la siguiente línea si no caben */
+}
+
+
+/* Estilos para las secciones de contacto y mapa */
+.contact-section,
+.map-section {
+    flex: 1;
+    /* Hace que ocupen el mismo espacio */
+    padding: 20px;
+    /* Espaciado interno */
+    background-color: #1e2356;
+    /* Color de fondo */
+    border-right: 1px solid #ccc;
+    /* Borde derecho */
+    border-radius: 5px;
+    /* Borde redondeado */
+    box-sizing: border-box;
+    /* Incluye el borde en el tamaño total */
+    margin-bottom: 2px;
+    /* Añade un margen inferior para separar las secciones */
+}
+
+/* Estilos para los títulos de las secciones */
+.contact-section h2,
+.map-section h2 {
+    font-size: 20px;
+    /* Tamaño de fuente */
+    color: white;
+    /* Color del texto */
+    margin-bottom: 10px;
+    /* Margen inferior */
+    margin-top: 20px;
+}
+
+/* Estilos para los párrafos dentro de las secciones */
+.contact-section p,
+.map-section p {
+    margin-bottom: 10px;
+    /* Margen inferior */
+    color: white;
+    /* Color del texto */
+}
+
+/* Animación de zoom al pasar el cursor sobre los íconos */
+.contact-section i:hover,
+.map-section i:hover {
+    transform: scale(1.7);
+    /* Aumenta el tamaño del ícono al pasar el cursor sobre él */
+    transition: transform 0.6s ease;
+    /* Transición suave para la animación */
+}
+
+/* Estilos para los iconos */
+.contact-section i,
+.map-section i {
+    margin-right: 5px;
+    /* Margen derecho */
+    font-size: 25px;
+}
+
+/* Estilo general para el iframe del mapa */
+.mapaClass {
+    width: 380px;
+    height: 280px;
+}
+
+/* Media query para dispositivos móviles con un ancho de 390px */
+@media only screen and (max-width: 390px) {
+    .mapaClass {
+        width: 100%;
+        height: auto;
+        /* Ajusta la altura proporcionalmente si deseas mantener la relación de aspecto */
+    }
+}
+
+/* Media query para dispositivos móviles con una altura de 844px */
+@media only screen and (max-height: 844px) {
+    .mapaClass {
+        width: 100%;
+        height: 100px;
+        /* Ajusta la altura proporcionalmente si deseas mantener la relación de aspecto */
+    }
+}
+/*Fin estilo general para el iframe del mapa */
+
+
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 1100px) {
+
+    .contact-section,
+    .map-section {
+        flex-basis: 1000%;
+        /* Establece el ancho al 100% para que ocupen toda la fila en pantallas más pequeñas */
+        border-right: none;
+        /* Elimina el borde derecho en pantallas más pequeñas */
+        margin-right: 0;
+        /* Elimina el margen derecho en pantallas más pequeñas */
+    }
+
+    .mapaClass {
+        width: 100%;
+    }
+}

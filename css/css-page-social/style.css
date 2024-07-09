@@ -1,0 +1,122 @@
+/* slider section */
+.slider_section .slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 10%;
+  height: 945px;
+}
+
+* {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.slider_section .detail-box {
+  width: 45%;
+  z-index: 4;
+  color: #ffffff;
+}
+
+.bg-custom {
+  background-color: #accd4b;
+  border-radius: 8px;
+}
+.bg-custom2 {
+  background-color: #1a2553;
+  border-radius: 8px;
+}
+
+.bg-custom3 {
+  background-color: #1f95c0;
+  border-radius: 8px;
+}
+
+.slider_section .detail-box h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
+  color: #aece49;
+}
+
+.slider_section .detail-box p {
+  width: 75%;
+  margin-top: 15px;
+}
+
+.slider_section .detail-box .slider-link {
+  display: inline-block;
+  padding: 10px 35px;
+  border: 1px solid #aece49;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 25px;
+  margin-top: 35px;
+}
+
+.slider_section .detail-box .slider-link:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.slider_section .img-box {
+  width: 73%;
+  margin-left: -17%;
+  position: relative;
+  z-index: 2;
+}
+
+.slider_section .img-box img {
+  /* width: 100%; */
+  height: 945px;
+}
+
+.slider_section .slider_bg-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1a94b9, #181f56);
+  z-index: 3;
+  -webkit-clip-path: polygon(0 0, 60% 0, 37% 100%, 0% 100%);
+  clip-path: polygon(0 0, 60% 0, 37% 100%, 0% 100%);
+}
+
+.slider_section .carousel-control-prev,
+.slider_section .carousel-control-next {
+  left: 47.6%;
+  width: 50px;
+  height: 50px;
+  z-index: 9;
+  background-size: 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 1;
+  border-radius: 100%;
+}
+
+.slider_section .carousel-control-prev {
+  background-color: #1a94b9;
+  top: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.slider_section .carousel-control-next {
+  background-color: #afcd49;
+  top: calc(50% - 30px);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+}
+
+/* --------- panel */
+.btn-icon {
+  width: 77px;
+  height: 77px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}

@@ -1,0 +1,204 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-image: url(../image/contacto.jpg);
+}
+
+* {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* Estilos para el formulario */
+.contact-form {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+a {
+  font-weight: 700;
+  color: #08507f;
+  text-decoration: none;
+}
+
+/*Inicio de estilos para formulario */
+
+.contact-form {
+  margin-top: 140px;
+  /* Ajusta el margen superior según la altura de la barra de navegación */
+  margin-bottom: 70px;
+  /* Ajusta el margen inferior según tus necesidades */
+  max-width: 400px;
+  /* Ancho máximo del formulario */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(249, 249, 249, 0.543);
+  /* Color semi-transparente de fondo */
+  backdrop-filter: blur(20px);
+  /* Aplica un desenfoque mayor al fondo */
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  height: 100px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/*Fin de estilos para formulario */
+
+/*Inicio de estilos para barra social */
+.container-bar {
+  width: 200%;
+  max-width: 50px;
+  position: fixed;
+  left: 0;
+  top: 25%;
+}
+
+.container-bar a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  transition: all 500ms ease;
+  color: #fff;
+}
+
+.container-bar a:hover {
+  background: #1c1c1c;
+}
+
+.container-bar .fa-facebook-f {
+  background: #0766fe;
+  border-radius: 0px 5px 0px 0px;
+}
+
+.container-bar .fa-youtube {
+  background: #e52a23;
+}
+
+.container-bar .fa-instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888,
+    #833ab4,
+    #405de6
+  );
+  color: white;
+  border-radius: 5px;
+}
+
+.container-bar .fa-whatsapp {
+  background: #26d367;
+}
+
+/* .container-bar .fa-pinterest{
+  background: #c8232c;
+  border-radius: 0px 0px 5px 0px;
+} */
+.container-bar #title {
+  position: absolute;
+  background: #1c1c1c;
+  padding: 0px 8px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 3px;
+  font-size: 15px;
+  top: 12px;
+  left: 0px;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.container-bar a:hover #title {
+  opacity: 1;
+  visibility: visible;
+  left: 64px;
+}
+
+.container-bar #title:after {
+  position: absolute;
+  content: "";
+  border-left: 7px solid transparent;
+  border-right: 6px solid #1c1c1c;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  right: 100%;
+  top: 8px;
+}
+
+#btn-social {
+  display: none;
+}
+
+.fa-play {
+  cursor: pointer;
+  transition: all 0.4s;
+  font-size: 12px;
+  margin-bottom: 5px;
+  display: inline-block;
+  transform: rotate(180deg);
+  color: #49b0e6;
+}
+
+#btn-social:checked ~ .fa-play {
+  transform: rotate(0deg);
+}
+
+.icon-social {
+  transition: all 0.4s;
+  transform: translateX(0%);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
+
+#btn-social:checked ~ .icon-social {
+  transform: translateX(-100%);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0);
+}
+
+/* Fin de barra de redes sociales */
