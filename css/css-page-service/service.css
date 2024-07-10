@@ -420,7 +420,7 @@ body {
 .el:nth-child(1) .el__bg:before {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  background-image: url("../../image/servicios/card-service1.jpg");
+  background-image: url("../../image/page-servicios/card-service1.jpg");
 }
 
 .el:nth-child(2) {
@@ -453,7 +453,7 @@ body {
 .el:nth-child(2) .el__bg:before {
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
-  background-image: url("../../image/servicios/card-service2.jpg");
+  background-image: url("../../image/page-servicios/card-service2.jpg");
 }
 
 .el:nth-child(3) {
@@ -486,7 +486,7 @@ body {
 .el:nth-child(3) .el__bg:before {
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
-  background-image: url("../../image/servicios/card-service3.jpg");
+  background-image: url("../../image/page-servicios/card-service3.jpg");
   margin-top: 20px;
 }
 
@@ -520,7 +520,7 @@ body {
 .el:nth-child(4) .el__bg:before {
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
-  background-image: url("../../image/servicios/card-service4.jpg");
+  background-image: url("../../image/page-servicios/card-service4.jpg");
 }
 
 .el:nth-child(5) {
@@ -553,7 +553,7 @@ body {
 .el:nth-child(5) .el__bg:before {
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
-  background-image: url("../../image/servicios/card-service5.jpg");
+  background-image: url("../../image/page-servicios/card-service5.jpg");
 }
 
 .el:hover .el__bg:after {

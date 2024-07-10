@@ -171,7 +171,7 @@ a.border-button:hover {
 
 .fun-facts {
   position: relative; /* Necesario para que el pseudo-elemento se posicione correctamente */
-  background-image: url(../../image/counter.jpg);
+  background-image: url(../../image/page-index/counter.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

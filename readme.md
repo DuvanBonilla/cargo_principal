@@ -9,7 +9,7 @@ repositorio: https://github.com/DuvanBonilla/cargo_principal.git
 
 ## Instalacion
 
-Para una instalacion local se debera de incluir el proyecto en nuestro servidor local.
+Para una instalacion local se debera de incluir el proyecto en el servidor local.
 
 ## Desarrollado con
 
