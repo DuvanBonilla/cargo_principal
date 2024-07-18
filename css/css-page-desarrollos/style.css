@@ -1194,7 +1194,7 @@ html[xmlns] .slides {
 .tab-carousel .item img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 500px;
 }
 
 .tab2-services-box {
