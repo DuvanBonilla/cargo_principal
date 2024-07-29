@@ -1182,6 +1182,10 @@ html[xmlns] .slides {
   position: absolute;
 }
 
+p {
+  justify-content: justify;
+}
+
 .tab-carousel .owl-next {
   right: 0;
   position: absolute;
