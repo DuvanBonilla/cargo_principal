@@ -1,0 +1,134 @@
+.el__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.course {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 40%;
+  overflow: hidden;
+  width: calc(
+    50% - 10px
+  ); /* Ajusta el tamaño para que las tarjetas se dividan por la mitad del contenedor */
+  margin-bottom: 20px;
+}
+
+.course h6 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.course h2 {
+  letter-spacing: 1px;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.course-preview {
+  background-color: #aecf48;
+  color: #fff;
+  padding: 30px;
+  max-width: 270px;
+}
+
+.course-preview2 {
+  background-color: #1d2456; /* Diferente color para course-preview2 */
+  color: #fff;
+  padding: 30px;
+  max-width: 270px;
+}
+
+.course-preview3 {
+  background-color: #1c94c5; /* Diferente color para course-preview2 */
+  color: #fff;
+  padding: 30px;
+  max-width: 270px;
+}
+
+.course-preview a {
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.course-info {
+  padding: 30px;
+  color: black;
+  position: relative;
+  width: 100%;
+}
+
+.progress-container {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-align: right;
+  width: 150px;
+}
+
+.progress::after {
+  border-radius: 3px;
+  background-color: #1d2456;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.progress2::after {
+  border-radius: 3px;
+  background-color: #1c94c5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.progress3::after {
+  border-radius: 3px;
+  background-color: #aecf48;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.progress-text {
+  font-size: 10px;
+  opacity: 0.6;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .course {
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 100%;
+  }
+
+  .progress::after {
+    visibility: hidden;
+  }
+}
