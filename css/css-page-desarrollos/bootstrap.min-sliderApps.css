@@ -6263,7 +6263,6 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #fff;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 1px solid #999;
