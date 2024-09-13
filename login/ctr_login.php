@@ -1,21 +1,22 @@
 <?php
-
 include_once ("conexion.php");
 include_once ("../login/val_login.php");
+
 
 $conexion = new conexion();
 $con = $conexion->conMysql();
 
 $codigo = $_POST['codigo'];
 
-$val_usuario = new val_usuario($codigo,$con);
+$val_usuario = new val_usuario();
 
 if($val_usuario->validar($codigo,$con)){
-    echo "Usuario valido";
+    header("Location: main.php");
+    exit(); 
 }
 else{
-    echo "Usuario no valido";
+    header("Location: ../index.php");
+    exit(); 
 }
 
-$conexion->cerrarConexion($con);
 

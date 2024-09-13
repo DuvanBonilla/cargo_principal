@@ -1,13 +1,6 @@
 <?php
 session_start();
 class val_usuario{
-    public $codigo;
-    public $conexion;
-
-    function __construct($codigo,$conexion){
-        $this->codigo = $codigo;
-        $this->conexion = $conexion;
-    }
 
     function validar($codigo,$conexion){
         
