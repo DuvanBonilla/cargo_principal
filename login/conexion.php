@@ -2,7 +2,7 @@
 
 class Conexion
 {
-    private $host = "localhost";
+    private $host = "localhost:3307";
     private $username = "root";
     private $password = "";
     private $database = "cargoban_principal";
