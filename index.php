@@ -255,7 +255,7 @@
           <i class="fa fa-phone-square"></i> PBX: (+57 604) 524 7028 • 310 390
           6416
         </p>
-        <button type="button" class="" style="background-color:#1e2356; color:#1e2356 " data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>
+        <button type="button" class="" style="background-color:#1e2356; color:#1e2356 " data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Nuestros numeros</button>
 
       </div>
       <div class="contact-section">
