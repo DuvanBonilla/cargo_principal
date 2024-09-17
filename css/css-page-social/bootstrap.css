@@ -6126,6 +6126,7 @@ a.close.disabled {
 }
 
 .modal-content {
+  background-color: white;
   position: relative;
   display: -ms-flexbox;
   display: flex;

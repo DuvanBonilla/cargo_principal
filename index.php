@@ -1,3 +1,4 @@
+<?php include 'login/consu_info.php'?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,8 +22,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-  <!-- modal login -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <header>
@@ -34,7 +33,7 @@
           <div class="full">
             <div class="center-desk">
               <div class="logo">
-                <a href="index.html"
+                <a href="index.php"
                   ><img src="image/logos-cargoban/LogoBlanco.png" alt="#"
                 /></a>
               </div>
@@ -59,7 +58,7 @@
                 <div class="limit-box">
                   <nav class="main-menu">
                     <ul class="menu-area-main">
-                      <li class="active"><a href="index.html">Inicio</a></li>
+                      <li class="active"><a href="index.php">Inicio</a></li>
                       <li><a href="company.html">Somos cargoban</a></li>
                       <li><a href="service.html">Servicios</a></li>
                       <li><a href="desarrollos.html">Desarrollos</a></li>
@@ -185,32 +184,32 @@
                 </div>
               </div>
               <div class="col-md-6 align-self-center">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="count-area-content">
-                      <div class="count-digit">40431737</div>
-                      <div class="count-title">Cajas anuales</div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="count-area-content">
-                      <div class="count-digit">63223</div>
-                      <div class="count-title" style="font-size: 17px;">Contenedores anuales</div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="count-area-content">
-                      <div class="count-digit">255682</div>
-                      <div class="count-title">Pallets anuales</div>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="count-area-content">
-                      <div class="count-digit">50</div>
-                      <div class="count-title" style="font-size: 19px;">Años de experiencia</div>
-                    </div>
-                  </div>
-                </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="count-area-content">
+        <div class="count-digit"><?php echo number_format($cajas_anuales); ?></div>
+        <div class="count-title">Cajas anuales</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="count-area-content">
+        <div class="count-digit"><?php echo number_format($contenedores_anuales); ?></div>
+        <div class="count-title" style="font-size: 17px;">Contenedores anuales</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="count-area-content">
+        <div class="count-digit"><?php echo number_format($pallets_anuales); ?></div>
+        <div class="count-title">Pallets anuales</div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="count-area-content">
+        <div class="count-digit"><?php echo number_format($anios_experiencia); ?></div>
+        <div class="count-title" style="font-size: 19px;">Años de experiencia</div>
+      </div>
+    </div>
+  </div>
               </div>
             </div>
           </div>
